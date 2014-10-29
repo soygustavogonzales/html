@@ -1,0 +1,269 @@
+* { margin: 0; padding: 0; border:0}/*haciendo el reset para que el navegador no decida algunas de estas propo¿iedades del documento*/
+
+body{
+	/*background:url("4.jpg")no-repeat scroll center top rgb(212,130,92);*/
+	background:url("fondo.jpg")no-repeat scroll center top rgb(03,01,02);
+}
+	
+#web{
+	border-radius: 8px;
+	background-color:rgba(255,255,170,0.4);
+	height: auto;
+	margin:10px auto;
+	position: relative;
+	width:900px;
+}
+
+#header{
+	width:100%;
+	height:50px;
+	background-color: #FAA276;
+	border-top-right-radius:10px; 
+	border-top-left-radius: 10px;
+	font-family:"Comic Sans MS",fantasy , sans-serif;
+	padding:0px 0px 0px 0px;
+	text-align: center;
+	
+}
+
+#menu>ul>li>a{
+
+}
+/*-------INICIO-MENU----------*/
+nav{
+	
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#FF8F8F));/*Para chrome y Safari*/
+	background-image: -moz-linear-gradient(top center, #FFF, #FF8F8F);/*Para Firefox*/
+	background-image: -o-linear-gradient(top, #FFF, #FF8F8F);/*Para Opera*/
+	background-image: linear-gradient(top, #FFF, #FF8F8F);/*El estandar por defecto*/
+	overflow:hidden;
+	width:900px;
+}
+nav ul{
+	list-style:none;/*le quita las viñetas colocadas por default en una lista sin orden*/
+	margin:0 10px 0 10px;
+	padding:0;
+}
+nav ul li{
+	border-radius:5px;/*Estandar por defecto*/
+	/*float:right;/*hace que las listas se formen en horizontal y hacia la izquierda*/
+	display:inline-block;
+	font-family:"Comic Sans MS",fantasy , sans-serif;
+	font-size:16px;
+	font-weight:bold;
+	margin-right:10px;
+	text-align:center;
+	text-shadow: 0px 1px 0px #FFF;/*Sombras para texto, los mismos parametros que box-shadow*/
+}
+nav ul li:hover{/*cuando el mouse pasa por los enlaces
+	/*Degradado de fondo*/
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#FF8F8F), to( #E3E3E3));/*Chrome y Safari*/
+	background-image: -moz-linear-gradient(top center, #FF8F8F, #E3E3E3);/*Firefox*/
+	background-image: -o-linear-gradient(top, #FF8F8F, #E3E3E3);/*Opera*/
+	background-image: linear-gradient(top, #FF8F8F, #E3E3E3);/*Estandar por defecto*/
+	/*Sombras para bloques o cajas*/
+	-webkit-box-shadow:  1px -1px 0px #999;/*Chrome y Safari*/
+	-moz-box-shadow:  1px -1px 0px #999;/*Firefox*/
+	-o-box-shadow:  1px -1px 0px #999;/*Opera*/
+	box-shadow:  5px -1px 10px #FF8F8F;/*Estandar por defecto*//*el 1er numero indica desplazamiento horizontal, el 2do el vertical, el 3ero el ancho del difuminado,el 4to el color*/
+	border:2px solid #FF8F8F;/**/
+}
+nav ul li a{
+	color:#999;
+	display:block;
+	padding:10px;
+	text-decoration:none;
+	/*Transiciones: Tiempo, Efecto y Propiedades aplicadas*/
+	-webkit-transition: 0.4s linear all;/*Chrome y Safari*/
+  	-moz-transition: 0.4s linear all;/*Firefox*/
+  	-o-transition: 0.4s linear all;/*Opera*/
+  	transition: 0.4s linear all;/*Estandar por defecto*/
+}
+nav ul li a:hover {/*cuando pase el mouse*/
+	color:#000;/*cambia el color de la letra*/
+}
+
+/*-------FIN-MENU----------*/
+#body{
+
+	position: relative;
+	width:100%;
+	margin:0px;
+	height: auto;
+	/*background:#fffaaa;*/
+
+}
+
+#content{
+	position: relative;
+	/*background: #fffaaa;*/
+	width:700px ;
+	height:auto;
+	margin-top: 0px;
+	padding-top: 5px;
+	/*border:2px solid #1A1A1A;*/
+	float:left;
+}
+#content > .caja{
+	position: relative;
+	background:#9E9292;
+	border-radius: 0.5em;
+	padding:5px;
+	margin:10px;
+	width:auto;
+}
+/*
+Se esta usando > para seleccionar a los id y elementos secundarios hijos solamente
+*/
+#content > .caja > .parrafo{
+	position: relative;
+	padding: 2px 2px 2px 2px;
+
+} 
+#content2{
+	height:10px;
+	width: 700px;
+
+}
+#content2 >.bannerHorizontal{
+	clear:both;
+	height:auto;
+	margin:0px 10px 0px 10px;
+	width:auto;
+	background: rgba(245,96,96,0.5);
+	/*border:2px solid #fff; */
+	border-radius: 0.5em;
+	padding:0px 5px 0px 5px;
+
+}
+#content3{
+
+	margin:0 auto;
+	width:100%;
+	clear: both;
+	/*padding: 0px 10px 10px 0px;*/
+	
+}
+#content3 > article[class|="caja"]:hover{/*cuando el mouse pase por los elemntos article que comienza con la palabra(de izquierda a derecha) caja, solo se consideran los article con el class que tienen las palabras separadas por guion(-) */
+	-webkit-box-shadow:  1px 1px 2px #fff;/*Chrome y Safari*/
+	-moz-box-shadow:  1px 5px 2px #fff;/*Firefox*/
+	-o-box-shadow:  1px 1px 2px #fff;/*Opera*/
+	box-shadow: 5px -5px 20px #fff;/*EStandar por defecto*/
+	/*---------------------------------------------------*/
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#EE7013), to( #FFC6A6));/*Chrome y Safari*/
+	background-image: -moz-linear-gradient(top center, #EE7013, #FFC6A6);/*Firefox*/
+	background-image: -o-linear-gradient(top, #EE7013, #FFC6A6);/*Opera*/
+	background-image: linear-gradient(#EE7013,#FFC6A6);/*estandar*/
+
+}
+
+#content3 >.caja{
+	margin:10px 10px 10px 10px;
+	background-color:rgba(255,255,170,0.4);
+	border-radius: 0.5em;
+	padding:10px;
+
+}
+#content3 >.caja >.parrafo{
+
+}
+#content3 > article[class|="caja-columna"]{/* #content3>.caja-columna-izquierda, #content3>.caja-columna-derecha*/
+/*se seleccionan todos los article dentro de #content3, que tengan una clase(class) que empiece por la cadena: caja-columna*/
+/*de esta forma se seleccionan los dos article: caja-columna-izquierda y caja-columna-derecha*/
+	background-color: rgba(194,197,1270,0.5);
+	border-radius: 0.5em;
+	margin:10px;
+	padding:10px;
+	width:45%;
+	height:auto;
+}
+#content3 > .caja-columna-izquierda{
+	float:left;
+	}
+
+#content3 > .caja-columna-izquierda> .parrafo{
+
+}
+#content3> .caja-columna-derecha{
+	float:right;
+}
+#content3> .caja-columna-derecha> .parrafo{
+
+}
+#content4{
+	clear:both;
+	margin:10px;
+	width:880px;
+	height:auto;
+
+}
+#content4>.caja{
+	
+}
+#content4>.caja>.parrafo{
+	background:#FFA579 ;
+	padding:5px;
+	border-radius: 0.5em;
+}
+#content5{
+	margin:10px 10px;
+	/*display:inline-block;*/
+}
+#content5 > article[class|="caja"]{
+	/*margin:10px;*/
+	/*clear:both;*/
+	background:#F79E20;
+	border-radius: 0.5em;
+	/*display:inline-block;*/
+	padding:10px 3px 10px 3px;/*el relleno interno en orden:Arriba-Derecha-Abajo-Izquiierda*/
+	/*width:270px;*/
+}
+#content5 > .caja-izquierda{
+	float:left;
+	width:280px;
+}
+#content5 > .caja-centro{
+
+	margin-left: 297px;
+	width: 280px;
+	
+}
+#content5> .caja-derecha{
+	float:right;
+	/*margin-left:600px;*/
+	width:280px;
+}
+
+#footer{
+	position: relative;
+	background:#95C0E5;
+	width:100%;
+	height:20px;
+	clear:both;
+	border-bottom-right-radius:10px; 
+	border-bottom-left-radius: 10px;
+}
+#sidebar{
+	
+	/*background: #fffaaa;*/
+	float:right;
+	height:auto;
+	position: relative;
+	width:197px;
+
+}
+#banners{
+	/*border:1px solid #000000;*/
+	border-radius: 0.3em;
+	margin:16px 0px;
+}
+#sidebar > #banners >.caja-publicidad{
+	position: relative;
+	/*border:0px double #a3B8A0;*/
+	border-radius: 3px;
+	height:100px;
+	margin:10px;
+	padding: 3px;
+	background:#a3B8A0;
+
+}

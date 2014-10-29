@@ -1,0 +1,145 @@
+*{margin: 0;padding: 0;border: 0;}
+body{
+	background: url("img/fondo.png") repeat-x #FAFCFE;
+	color: #434343;
+}
+
+a:link{
+	color: #434343;
+}
+a:hover{
+	color: #000;
+}
+
+a:visited{
+	color:#26919b;
+}
+
+a:active{
+	color: #000;
+}
+#web{
+	margin: 0 auto;
+	width: 80%;
+	max-width: 38em;
+	min-width: 280px;
+	margin-top: 30px;
+}
+h1{
+	font-size: 26px;
+	font-family:'Segoe UI', Tahoma, Helvetica, Arial, sans-serif;
+	margin-bottom: 10px;
+	 }
+section#header img,article{
+	display: inline;
+}
+section#header img{
+	padding-top: 10px;
+	float: left;
+	margin-right: 20px;
+}
+section#header article{
+	font-size: 18px;
+}
+
+section#content{
+
+	width: 100%;
+	margin-top: 10%;
+	margin-bottom:10%;
+	padding-bottom: 50px;
+	font-size: 16px;
+	position: relative;
+	padding-bottom: 1%;
+
+}
+section[id="content"]>article{
+	box-sizing:border-box;
+	display: inline-block;
+	width: 49%;
+	min-width: 180px;
+	padding: 0 0 0 1em;
+	vertical-align: super;
+
+}
+
+section#content>article>p{
+	vertical-align: super;
+	margin-bottom: 10px;
+}
+section#content>article>p:first-letter{
+	font-size: 200%;
+}
+section#content>article>ul{
+	margin: 20px 0 0 20px;
+	
+}
+
+section#content>article.content-left{
+	height: 100%;
+}
+
+section#content>article.content-right{
+	
+	border-left: 1px dotted #000;
+}
+footer#footer{
+	/*clear: both;*/
+	/*display: block;*/
+	/*background-color: #c2cbcb;*/
+	width: auto;
+	height: 100px;
+	border-top: 1px dotted #000;
+	/*margin-top: 400px;*/
+	/*position: relative;*/
+}
+footer#footer span{
+	font-size: 11px;
+	display: inline-block;
+}
+footer#footer span:first-child{
+	text-align: left;
+}
+footer#footer span:last-child{
+	text-align: right;
+	
+}
+/*
+MEDIA QUERIES
+*/
+	@media screen and (max-width: 680px){
+		/*body{background: #BAA9FC;}*/
+		section#content>article.content-left,section#content>article.content-right {
+			width: 100%;
+			float: none;
+			padding: 0;
+			margin: 0 0 10px 0 ;
+			border: 0;
+		}
+
+
+	}
+
+	@media screen and (max-width:320px){
+		/*body{background: #FABBA0;}*/
+	}
+
+	@media screen and (max-width: 210px){
+		/*body{background: #D8DC89;}*/
+	}
+	/*MEDIA QUERI PARA IMPRIMIR*/
+	@media print {
+		
+		*{background: transparent !important;
+			color:#000;
+			text-shadow:none;
+		}
+		/*los enlaces de todo el documento van a mostrar su atributo href a continuacion de su texto*/
+		a:after{
+			content: attr(href); /*colocaria la direccion de la pagina despues del texto de la etiqeta a*/
+			font-style: italic;/*coloca el texto de la direccion en cursiva*/
+		}
+		
+
+
+	}

@@ -1,0 +1,12 @@
+em{
+	color:#F7503B;
+}
+body{
+	background: white;
+	border:1px solid #ede;
+}
+body:after{
+	content: 'body';
+	color:black;
+	background: #F2F1F0;
+}

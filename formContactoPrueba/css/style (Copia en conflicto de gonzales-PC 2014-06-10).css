@@ -1,0 +1,127 @@
+ .col-3{
+	float:left
+}
+.main1 {
+	width:984px;
+	padding:0;
+	margin:0 auto;
+	font-size:0.875em;
+	line-height:1.285em
+}
+
+.p0 {
+	margin-bottom:0px
+}
+/* content */
+#content1 {
+	width:100%;
+	padding:10px 0 40px;
+	background:#fff;
+	border-radius:18px 18px 0 0;
+	-moz-border-radius:18px 18px 0 0;
+	-webkit-border-radius:18px 18px 0 0;
+	position:relative;
+	z-index:2
+}
+#content1 .padding1 {
+	padding:24px 12px 0
+}
+#formulario1 {
+	display:block
+}
+#formulario1 label {
+	display:block;
+	height:30px;
+	overflow:hidden
+}
+#formulario1 input {
+	float:left;
+	width:526px;
+	font-size:13px;
+	line-height:1.23em;
+	color:#0f0f0f;
+	padding:4px 10px;
+	margin:0;
+	font-family:Arial, Helvetica, sans-serif;
+	border:1px solid #ebebeb;
+	background:none
+}
+#formulario1 select {
+	float:left;
+	width:548px;
+	font-size:13px;
+	line-height:1.23em;
+	color:#0f0f0f;
+	padding:4px 10px;
+	margin:0;
+	font-family:Arial, Helvetica, sans-serif;
+	border:1px solid #ebebeb;
+	background:none
+}
+#formulario1 textarea {
+	height:262px;
+	overflow:auto;
+	float:left;
+	width:526px;
+	font-size:13px;
+	line-height:1.23em;
+	color:#0f0f0f;
+	padding:4px 10px;
+	margin:0;
+	font-family:Arial, Helvetica, sans-serif;
+	border:1px solid #ebebeb;
+	background:none
+}
+#estado1 {
+	font-size:14px;
+	color:#333;
+	display:inline-block;
+	margin-top:15px;
+}
+.text-form1 {
+	float:left;
+	display:block;
+	font-size:14px;
+	width:73px;
+	line-height:1.78em;
+	color:#0f0f0f
+}
+
+
+input#boton1 {
+	width:100px;
+	padding:0;
+	height:50px;
+	color:#fff;
+	font-size:16px;
+	line-height:30px;
+	vertical-align:middle;
+	text-align:center;
+	margin-left:10px;
+	background-color:#F24C15;
+	cursor:pointer;
+	border:none;
+	padding:0;
+}
+input#boton1:hover {
+	background-color:#030;
+	color:#ccc;
+}
+input#limpiar1 {
+	width:100px;
+	padding:0;
+	height:50px;
+	color:#fff;
+	font-size:16px;
+	line-height:30px;
+	vertical-align:middle;
+	text-align:center;
+	margin-left:400px;
+	background-color:#F24C15;
+	cursor:pointer;
+	border:none;
+}
+input#limpiar1:hover {
+	background-color:#030;
+	color:#ccc;
+}

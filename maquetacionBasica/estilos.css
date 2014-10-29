@@ -1,0 +1,61 @@
+*{margin:0;padding: 0;border:0;}
+#web{
+	position: relative;
+	width: 900px;
+	height: auto;
+	/*centrar documento*/
+	left: 50%;
+	margin-left: -450px;/*la mitad de 900px*/
+	/*centrar documento*/
+	margin-top: 10px;
+	
+}
+
+#header{
+
+	height:100px;
+	background: #00f;
+	width:100%;
+}
+#body{
+	position:relative;
+	width: 100%;
+	height:auto;
+}
+#footer{
+	position:relative;
+	width: 100%;
+	height:30px;
+	background:#f00;
+	clear:both;
+}
+#content{
+	position:relative;
+	widows: 700px;
+	height:auto;
+	background:#324;
+	float:left;
+
+}
+.article{
+	position:relative;
+	width:680px;
+	height:100px;
+	background:#fae;
+	margin:10px 10px 10px 10px;/*Indica margen hacia arriba-derecha-abajo-izquierda (orden respectivo)*/
+}
+
+#sidebar{
+	position:relative;
+	width: 200px;
+	background:#777;
+	height:auto;
+	float:right;
+}
+.module{
+	position:relative;
+	width:180px;
+	height:210px;
+	background:#ff3;
+	margin:10px;
+}

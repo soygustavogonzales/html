@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<title>FWT Slide</title>
+		<link href="http://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="fwt.css" />
+		
+		<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.slidertron-0.3.1.js"></script>
+		<script type="text/javascript" src="js/jquery.treeonic-0.2.js"></script>
+		<script type="text/javascript" src="js/jquery.poptrox-0.1.js"></script>
+		<script type="text/javascript" src="js/init.js"></script>
+		
+	</head>
+	<body>
+		<div id="outer">
+			<div id="header">
+				<div id="logo">
+					<h1><a href="#">FWT<span>Slide</span></a></h1>
+				</div>
+				
+				<div id="search">
+					<form action="" method="post">
+						<div>
+							<input class="text" name="search" size="32" maxlength="64" />
+						</div>
+					</form>
+				</div>				
+				
+				<div id="nav">
+					<ul id="dropmenu">
+						<li class="first active">
+							<a href="#">Home</a>
+							<ul>
+								<li><a href="#">Sub Menu</a></li>
+								<li><a href="#">Sub Menu</a></li>
+									<ul>
+										<li><a href="#">Sub Menu</a></li>
+										<li><a href="#">Sub Menu</a></li>
+									</ul>
+								<li><a href="#">Sub Menu</a></li>
+								<li><a href="#">Sub Menu</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Services</a>
+							<ul>
+								<li><a href="#">Sub Menu</a></li>
+								<li><a href="#">Sub Menu</a></li>
+								<li><a href="#">Sub Menu</a></li>
+								<li><a href="#">Sub Menu</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Portfolio</a>
+						</li>
+						<li class="last">
+							<a href="#">Contact</a>
+						</li>
+					</ul>
+					<br class="clear" />
+				</div>
+				
+			</div>
+			
+
+				
+			<div id="banner">
+					<div id="slidertron">
+
+						<div class="viewer">
+							<div class="reel">
+								<div class="slide">
+									<img src="images/1.jpg" alt="">
+									<span></span>
+									<a href="/1/" class="link">More ...</a>
+									<span class="caption1">This is the first slide's caption 1</span>
+									<span class="caption2">This is the first slide's caption 2</span>
+								</div>
+								<div class="slide">
+									<img src="images/2.jpg" alt="">
+									<span></span>
+									<a href="/2/" class="link">More ...</a>
+									<span class="caption1">This is the second slide's caption 1</span>
+									<span class="caption2">This is the second slide's caption 2</span>
+								</div>
+								<div class="slide">
+									<img src="images/3.jpg" alt="">
+									<span></span>
+									<a href="/3/" class="link">More ...</a>
+									<span class="caption1">This is the third slide's caption 1</span>
+									<span class="caption2">This is the third slide's caption 2</span>
+								</div>
+								<div class="slide">
+									<img src="images/4.jpg" alt="">
+									<span></span>
+									<a href="/4/" class="link">More ...</a>
+									<span class="caption1">This is the fourth slide's caption 1</span>
+									<span class="caption2">This is the fourth slide's caption 2</span>
+								</div>
+							</div>
+						</div>
+						<div class="indicator">
+							<ul>
+								<li class="active">1</li>
+								<li>2</li>
+								<li>3</li>
+								<li>4</li>
+							</ul>
+							<br class="clear" />
+						</div>
+						<div class="captionLine1"></div>
+						<div class="captionLine2"></div>
+					</div>
+					
+					<script type="text/javascript">
+
+						$('#slidertron').slidertron({
+							viewerSelector:			'.viewer',
+							reelSelector:			'.viewer .reel',
+							slidesSelector:			'.viewer .reel .slide',
+							indicatorSelector:		'.indicator ul li',
+							//navPreviousSelector:	'.previous',
+							//navNextSelector:		'.next',
+							//navFirstSelector:		'.first',
+							//navLastSelector:		'.last',
+							//navStopAdvanceSelector:	'.stop',
+							//navPlayAdvanceSelector:	'.play',
+							advanceDelay:			3000,
+							speed:					'slow',
+							viewerOffset:			200,
+							activeSlideClass:		'slide-active',
+							slideLinkSelector:		'.link',
+							captionLines:			2,
+							captionLineSelector:	'.captionLine',
+							slideCaptionSelector:	'.caption'
+						});
+						
+					</script>			
+			
+					<br class="clear" />
+			
+			</div>
+			<div id="main">
+				<div id="content">
+					<div id="box1">
+						<div class="blogpost primary_wide4">
+							<h2>Welcome to FWT Slide</h2>
+							<h3>Posted on 01.01.2012 by <a href="#">Someone</a></h3>
+							<img class="left" src="images/image02.jpg" width="250" height="272" alt="" />
+							<p>
+								<strong>FWT Slide</strong> is a Free XHTML/CSS template by <a href="http://freewebtemplates.com">FWT</a>. We release all of our free templates under the <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</a> , which means you can use it however you like as long as you give credit via a small text link somewhere on the site. If you would like to remove this link you can do so by sending a <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=X6H247U4WTMRQ">paypal donation</a> of your choosing.All images used in this template are sourced from <a href="http://fotogrph.com/">Fotogrph</a>, thier links must remain intact if you wish to use their images.
+							</p>
+							<p class="meta">
+								<span class="comments"><a href="#">0 Comments</a></span> &nbsp; <span class="readmore"><a href="#">View Post</a></span>
+							</p>
+						</div>
+					</div>
+
+					<br class="clear" />
+				</div>
+				<div id="sidebar1">
+				
+					<div class="widget">
+						<div class="gallery">
+							<h2>Quis odio imperdiet</h2>
+							<ul id="pics" class="gallery_sidebar">
+								<li>
+									<a href="images/04.jpg"><img title="Lorem ipsum dolor" src="images/image04.jpg" width="60" height="60" alt="" /></a>
+								</li>
+
+								<li>
+									<a href="images/06.jpg"><img title="Lorem ipsum dolor" src="images/image06.jpg" width="60" height="60" alt="" /></a>
+								</li>
+								<li>
+									<a href="images/07.jpg"><img title="Lorem ipsum dolor" src="images/image07.jpg" width="60" height="60" alt="" /></a>
+								</li>
+								<li>
+									<a href="images/08.jpg"><img title="Lorem ipsum dolor" src="images/image08.jpg" width="60" height="60" alt="" /></a>
+								</li>
+								<li>
+									<a href="images/09.jpg"><img title="Lorem ipsum dolor" src="images/image09.jpg" width="60" height="60" alt="" /></a>
+								</li>
+								<li>
+									<a href="images/10.jpg"><img title="Lorem ipsum dolor" src="images/image10.jpg" width="60" height="60" alt="" /></a>
+								</li>
+								<li>
+									<a href="images/11.jpg"><img title="Lorem ipsum dolor" src="images/image11.jpg" width="60" height="60" alt="" /></a>
+								</li>
+								<li>
+									<a href="images/12.jpg"><img title="Lorem ipsum dolor" src="images/image12.jpg" width="60" height="60" alt="" /></a>
+								</li>
+							</ul>
+							
+							<script type="text/javascript">
+								$('#pics').poptrox();
+							</script>
+							
+						</div>
+						<br class="clear" />
+					</div>
+					
+					<div class="widget">
+						<h3>Pellentesque ligula accumsan</h3>
+						<p>
+							Ultricies phasellus cubilia placerat fusce dignissim. Purus molestie faucibus amet suscipit a egestas. Posuere mattis suscipit volutpat penatibus tortor morbi.
+						</p>
+					</div>
+					
+				</div>
+				<br class="clear" />
+			</div>
+
+		</div>
+		<div id="copyright">
+			FWTSlide by <a href="http://freewebtemplates.com/">FWT</a> by <a href="http://doni.us/">Adonis</a>. jQuery by <a href="http://nodethirtythree.com/">N33</a>. Photos by <a href="http://fotogrph.com/">Fotogrph</a>.
+		</div>
+	</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+	
+	<meta charset="UTF-8">
+	<!--<meta http-equiv="refresh" content="1" url="file:///media/2CF88D61F88D2A62/Users/gustavo/Desktop/prueba/pruebaJs.html">-->
+       <script language="javascript" type="text/javascript" src="javascript.js"></script>
+	<title>untitle</title>
+</head>
+<body>
+	<form action="" name="Form_datos">
+		<fieldset><!Hace que el form se agrupe>
+			<legend>Datos de usuario</legend><!--Da un marcado titular-->
+				<ul>
+				<li><label for="firstname">Firstname: <input type="text" name="nombre" onblur="validarNom(Form_datos.nombre.value)"></li>
+				<li><label for="lastname">Lastname: </label><input type="text" onblur="validarApe()"></li>
+				<li><label for="sexo">Sexo: </label>
+					
+					<input type="radio" name="sexo" value="hombre">Hombre
+					<input type="radio" name="sexo" value="mujer">Mujer							
+<!---->
+				</li>
+                                <li><label for="dateNac" >Date Born: </label><input type="text" name="fechaNac" onfocus="validarSex()" onblur="validarDat(Form_datos.fechaNac.value)" placeholder="dd/mm/yy"></li>
+				<li><label for="direction">Direction: </label><input type="text" name="apellido" onblur="validarDir(Form_datos.apellido.value)"></li>
+				<li><label for="celular">Celular: </label><input type="text" maxlength="10" name="celular" onblur="validarCel(Form_datos.celular.value)" placeholder="Maximo 9 digitos"></li>
+				<li><label for="email">E-mail: </label><input type="text" name="email" onblur="validarEma()" placeholder="ej:gustavo.gonda@gmail.com"></li>
+				<li><label for="mensaje">Mensaje: </label><textarea name=""  cols="30" rows="10" maxlength="500" placeholder="Maximo 500 caracteres"></textarea></li>
+				</ul>
+				<input type="submit" value="Enviar" onclick="validarTodo()">
+				<input type="reset" value="Reiniciar">
+		</fieldset>
+	</form>
+	
+	<!-- <input type="submit" value="mostrar" onclick="mostrar()"> -->
+</body>
+</html>

@@ -1,0 +1,36 @@
+*{margin: 0;padding: 0;border: 0;}
+body{
+	background: #C6AFAA;
+}
+#web{
+	background: #E05F38;
+	height: auto;
+	margin: 0 auto;
+	width: 80%;
+	padding: 10px;
+}
+section{
+	margin: 2px;
+	box-sizing:border-box;
+	background: #D38C45;
+	border:2px solid #D35350; 
+	padding: 5px;
+	text-shadow: 1px 1px #737362;
+	//width: 57em;
+	max-width: 57em;
+}
+
+section article{
+	padding: 5px;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	box-sizing:border-box;
+}
+section#content-s article{
+	border: 2px solid #F41313;
+	//margin: 2px;
+	width: 50%;
+	display: inline-block;
+	vertical-align: top;
+}

@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="es pe">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style rel="stylesheet" type="text/css">
+	nav #caja{
+		border-radius: 50%;
+		border: 2px solid #F93939;
+		height:100px;
+		width: 150px;
+		position: absolute;
+		z-index: 2;
+		background: rgba(231,15,3,0.5);
+	}
+		nav{
+			width: 450px;
+			position: absolute;
+				
+				
+			}
+		nav>ul>li{
+			width: 100%;
+			margin: 2px;
+			background: #05DA70;
+			//padding: 2px;
+			list-style: none;
+			position: relative;
+			z-index: 1;
+		}
+		nav>ul>li>li{
+			padding-left: 14px;
+			z-index: 2;
+			position: relative;
+		}
+		#cajon{
+			position: absolute;
+			top: 160px;
+			width: 800px;
+			border:1px solid #91EA2F;
+			display: inline;
+		}
+		#cajon>div,ul{
+			display: inline-block;
+
+			
+		}
+		#cajon>div{
+			top: 15px;
+			position: relative;
+			width: 200px;
+			height: 200px;
+			background: rgba(5,200,216,0.5);
+			border-radius: 50%;
+			z-index: 2;
+			
+		}
+		#cajon ul li{
+			background: #EA7366;
+			width: 20em;
+			margin-bottom: 20px;
+			list-style: none;
+			position: relative;
+			
+			
+		}
+		#cajon>ul>li>ul{
+			
+			
+			
+		}
+		#cajon>ul{
+			//background: #FF7D46;
+			margin: 1px;
+			position: relative;
+			left: -180px;
+		}
+		#cajon>ul>li>ul[class='hola1']{margin-left: 78px;background: #282222;}
+		#cajon>ul>li>ul[class='hola2']{margin-left: 96px;background: #282222;}
+		#cajon>ul>li>ul[class='hola3']{margin-left: 98px;background: #282222;}
+		#cajon>ul>li>ul[class='hola4']{margin-left: 84px;background: #282222;}
+		#cajon>ul>li>ul[class='hola5']{margin-left: 45px;background: #282222;}
+
+	</style>
+</head>
+<body>
+	<nav>
+		<div id="caja">
+			
+		</div>
+		<ul>
+			<li><li>home</li></li>
+			<li><li>about</li></li>
+			<li><li>gustavo</li></li>
+			<li><li>gonzales</li></li>
+			<li><li>contact</li></li>
+		</ul>
+
+	</nav>
+	<div id="cajon">
+		<div>
+			
+		</div>
+		<ul>
+		<li><ul class="hola1">hola1</ul></li>
+		<li><ul class="hola2">hola2</ul></li>
+		<li><ul class="hola3">hola3</ul></li>
+		<li><ul class="hola4">hola4</ul></li>
+		<li><ul class="hola5">hola5</ul></li>
+		</ul>
+		
+	</div>
+</body>
+</html>

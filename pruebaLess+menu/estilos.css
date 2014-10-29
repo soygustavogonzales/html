@@ -1,0 +1,64 @@
+body {
+  background-image: url("images.jpeg");
+  margin: 0 ;
+  border: 0;
+  padding: 0;
+  font-family: "Times New Roman", helvetica, times;
+}
+#web {
+  height: 1200px;
+  width: 900px;
+  margin: 0 auto;
+  background-color: #81c974;
+}
+#header {
+  font-family: "Grand Hotel";
+  font-size: 20px ;
+}
+#header #menu_p {
+  margin: 0 auto;
+  margin-left: 50px;
+  padding: 0;
+  width: 800px;
+  height: 40px;
+  border: 2px double #79e3e3;
+  list-style: none;
+  display: block;
+  padding-bottom: 5px;
+  position: fixed;
+  background: #e86c76;
+}
+#header #menu_p ul {
+  position: absolute;
+}
+#header #menu_p ul li {
+  display: inline-block;
+  cursor: hand;
+  cursor: pointer;
+  width: 100px;
+  height: 30px;
+  border: 1px solid #638161;
+  border-radius: 5px;
+  background: #fc4e6c;
+  text-align: center;
+  color: white;
+  text-shadow: 3px 3px 5px #f59eb9;
+}
+#header #menu_p ul li ul li {
+  visibility: hidden;
+  display: none;
+}
+#header #menu_p ul li:hover {
+  box-shadow: 3px -6px 3px #ee3c40;
+}
+#header #menu_p ul li:hover ul li {
+  visibility: visible;
+  display: block;
+}
+#content-principal {
+  text-align: justify;
+  padding: 45px 10px 10px;
+}
+#content-principal .parrafo {
+  padding: 10px;
+}

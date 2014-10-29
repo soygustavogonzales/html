@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>slider basico</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).on("ready",function(){
+			sliderActual=0;
+			setTimeout("cambiarSlider()",2000);
+		});
+		function cambiarSlider(){
+			switch(sliderActual){
+				case 0:
+					$("#slider ul").animate({left:"-920px",top:"0px"},1000);
+					break;	
+				case 1:
+					$("#slider ul").animate({left:"0px",top:"-400px"},1000);
+					break;
+				case 2:
+					$("#slider ul").animate({left:"-920px",top:"-400px"},1000);
+					break;
+				case 3:
+					$("#slider ul").animate({left:"0px",top:"0px"},1000);
+					break;
+			}
+			sliderActual=(sliderActual+1) % 4;
+			setTimeout("cambiarSlider()",2000);
+		}
+
+	</script>
+	<style type="text/css">
+					#slider{
+						clear: both;
+						width: 920px;
+						height: 400px;
+						overflow: hidden;
+						margin: 10px auto;
+						border: 7px solid #666;
+						border-radius: 10px;
+						box-shadow: 5px 5px 3px #aaa;
+					}
+					ul{
+						width: 1840px;
+						height: 800px;
+						overflow: hidden;
+						position: relative;
+						margin: 0;
+						padding: 0;
+					}
+					li{
+						width: 920px;
+						height: 400px;
+						float: left;
+						display:inline;
+						overflow: hidden;
+						background-color: #666;
+					}
+					li img{
+						border-radius: 5px;
+					}
+
+	</style>
+
+</head>
+<body>
+	<div id="slider">
+					<ul>
+						<li><img src="img/imac.jpg" alt=""></li>
+						<li><img src="img/iphone.jpg" alt=""></li>
+						<li><img src="img/macbook.jpg" alt=""></li>
+						<li><img src="img/info.jpg" alt=""></li>
+					</ul>
+	</div>
+</body>
+</html>

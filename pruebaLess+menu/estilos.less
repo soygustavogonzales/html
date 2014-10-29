@@ -1,0 +1,95 @@
+//en sublime text 2(el editor de texto) con [CTRL]+[B] podemos compilar automaticamente el archivo .less
+//en un archivo .css con el mismo nombre q el del .less(estilos.less >> estilos.css)
+
+@background-color-web:#81C974;
+@background-color-div:@background-color-web+80;
+@color-p:#EE3C40;
+@height-web:1200px;
+@width-web:900px;
+@height:100px;
+@width:252px;
+@margin-center:0 auto;
+.reset(){
+	margin: 0 ;border:0;padding: 0;
+}
+.box-shadow(@x:3px,@y:-6px,@ancho:3px,@color:@color-p){
+	box-shadow: @x @y @ancho @color;
+}
+@font-family:"Times New Roman", helvetica, times;
+.cursor(){
+	cursor:hand;
+	cursor: pointer;
+}
+.rounded-corners(@radius:10px){// este es un mixins cuando llamemos a esta funcion se ejecutara todo su contenido.
+	border-radius:@radius;
+	-webkit-border-radius: @radius;
+  	-moz-border-radius: @radius;
+  	-ms-border-radius: @radius;
+  	-o-border-radius: @radius;
+
+}
+body{
+	background-image: url("images.jpeg");
+	.reset();
+	font-family:@font-family
+}
+#web{
+	height: @height-web;
+	width:@width-web; 
+	margin:@margin-center;
+	background-color: @background-color-web; 
+
+}
+#header{ //las modicicaciones q se hagan desde aqui afectan a todos los elementos q estan dentro de este.
+font-family:"Grand Hotel" ;
+font-size:20px ;
+	#menu_p{
+			margin: @margin-center;
+			margin-left: 50px;
+			padding: 0;
+			width: 800px;
+			height: 40px;
+			border: 2px double #79E3E3;
+			list-style: none;
+			display: block;
+			//overflow: hidden;//ocultara todo lo q este fuera de este elemento
+			padding-bottom: 5px;
+			position: fixed;
+			background: #E86C76;
+
+		ul{
+			//text-align: center;
+			position: absolute;
+			li{
+				display:inline-block;
+				.cursor();
+				width:100px;
+				height: 30px;
+				border:1px solid #638161;
+				border-radius: 5px;
+				background: #FC4E6C;
+				text-align: center;
+				color: #ffffff;
+				text-shadow:3px 3px 5px #F59EB9;
+				ul{
+					li{visibility: hidden;display: none;}
+				}//end ul
+				&:hover{
+					.box-shadow();
+				}
+				&:hover ul{
+					li{visibility: visible;display: block;}
+				}//end &hover ul
+			}//end li
+		}//end ul
+	}//end menu
+}//end header
+
+#content-principal{
+	
+	text-align: justify;
+	padding: 45px 10px 10px;
+	.parrafo{
+		padding: 10px;
+	}
+}
